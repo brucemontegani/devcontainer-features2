@@ -1,0 +1,9 @@
+{
+    "name": "Powerlevel10k",
+    "id": "powerlevel10k",
+    "version": "1.0.0",
+    "description": "Powerlevel10k theme for Zsh",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
