@@ -55,7 +55,7 @@ else
     INSTALL_CMD="${PKG_MGR_CMD} ${INSTALL_CMD_ADDL_REPOS} -y install --noplugins --setopt=install_weak_deps=0"
 fi
 
-type fc-cache
+# type fc-cache
 
 # if ![ type fc-cache ]; then
 #     echo "'fc-cache' not found"
