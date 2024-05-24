@@ -35,15 +35,16 @@ USER_HOME="${_REMOTE_USER_HOME}"
 
 export DEBIAN_FRONTEND=noninteractive
 
-# echo "\nUpdating package list and installing packages..."
+echo "\nUpdating package list and installing packages..."
 
-# apt-get update && apt-get install -y \
-#     fontconfig \
-#     jq  && \
-#     apt-get clean && \
-#     rm -rf /var/lib/apt/lists/*
+apt-get update && apt-get install -y \
+    curl \ &&
+    # fontconfig \
+    # jq  && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# echo "Packages installed successfully."
+echo "Packages installed successfully."
 
 echo "\nInstalling Meslo font."
 
