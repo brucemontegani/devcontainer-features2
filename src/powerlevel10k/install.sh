@@ -37,12 +37,11 @@ export DEBIAN_FRONTEND=noninteractive
 
 echo "\nUpdating package list and installing packages..."
 
-apt-get update && apt-get install -y \
-    curl \ &&
+apt update && apt install -y && curl && \
     # fontconfig \
     # jq  && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    apt clean
+    # rm -rf /var/lib/apt/lists/*
 
 echo "Packages installed successfully."
 
