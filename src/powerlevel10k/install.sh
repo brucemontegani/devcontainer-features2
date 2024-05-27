@@ -37,7 +37,10 @@ export DEBIAN_FRONTEND=noninteractive
 
 echo "\nUpdating package list and installing packages..."
 
-apt-get update && apt-get install -y curl xz-utils && \
+apt-get update && apt-get install -y \
+    curl \
+    xz-utils \
+    git && \
     # fontconfig \
     # jq  && \
     apt-get clean
