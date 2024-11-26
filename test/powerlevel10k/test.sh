@@ -64,6 +64,8 @@ fi
 # check "execute command" install.sh
 set PWD = $(pwd)
 check "execute command" echo "$PWD"
+check "execute command" echo "$_REMOTE_USER"
+
 
 
 # Report results
